@@ -21,4 +21,4 @@ module.exports = (robot) ->
 
   robot.respond /praise @?([\w .\-]+)\?*$/i, (res) ->
     name = res.match[1].trim()
-    res.send "@#{name} " + res.random praises
+    res.send "@#{name}: " + res.random praises
