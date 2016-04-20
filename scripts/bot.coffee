@@ -19,7 +19,7 @@ module.exports = (robot) ->
   robot.respond /praise (.*)/i, (res) ->
     name = res.match[1].trim()
     name = res.message.user.name if (name == 'me' || name == "me!")
-    res.send "@#{name}: " + res.random praises
+    res.send "#{name}: " + res.random praises
 
   # if(/praise me/i)
   #   robot.respond /praise me/i, (res) ->
